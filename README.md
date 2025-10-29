@@ -1,1 +1,1 @@
-# code for paper 'Knowledge Graph Completion via Dynamic Fusion of Structure and Text'
+# Code For Paper 'Knowledge Graph Completion via Dynamic Fusion of Structure and Text'
