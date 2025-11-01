@@ -14,7 +14,6 @@ import datetime
 import time
 
 from torch.utils.data import DataLoader
-from dataloader import TestDataset
 from collections import defaultdict
 
 from ogb.linkproppred import Evaluator

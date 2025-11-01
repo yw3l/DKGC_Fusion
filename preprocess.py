@@ -19,7 +19,8 @@ parser.add_argument('--test-path', default='', type=str, metavar='N',
                     help='path to valid data')
 
 args = parser.parse_args()
-mp.set_start_method('fork')
+if os.name != 'nt':
+    mp.set_start_method('fork')
 
 
 def _check_sanity(relation_id_to_str: dict):
@@ -318,4 +319,6 @@ def main():
 
 
 if __name__ == '__main__':
+    if os.name != 'nt':
+        mp.set_start_method('fork')
     main()
